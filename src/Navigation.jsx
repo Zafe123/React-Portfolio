@@ -5,10 +5,10 @@ function Navigation() {
     <nav class="navbar navbar-expand-lg sticky-top">
       <div class="container-fluid">
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+          <i class="fa-solid fa-bars"></i>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mx-auto mt-2">
+          <ul class="navbar-nav mx-auto mt-3">
             <NavLink to="/" className={({ isActive }) => (isActive ? "link-active" : "link")}>
               Home
             </NavLink>

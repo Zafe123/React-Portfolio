@@ -35,17 +35,15 @@ nav a {
   color: white;
 }
 
+a:hover {
+  color:orange;
+}
+
 /* Specific styles for active links */
 .link-active {
   color: white;
-  background: orange;
+  background: gray;
   border-radius: 5px;
 }
 
-.content {
-  margin-top: 50px;
-  text-align: center;
-
-
-}
 
