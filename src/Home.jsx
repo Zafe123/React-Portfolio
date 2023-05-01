@@ -1,21 +1,25 @@
-import UserInfo from "./homecomponent/UserInfo";
-import Time from "./homecomponent/Time";
-import Newsfeed from "./homecomponent/Newsfeed";
+import { NavLink } from 'react-router-dom';
+
 
 function Home() {
 
   return (
-    <div className="container py-2 my-3 mx-auto">
-      <div className="row gy-3 gx-3">
-        {/* LEFT PANEL USERINFO AND TIME COMPONENT ********************************** */}
-        <div className="col-md-5 shadow border border-1 rounded-2 p-1">
-          <UserInfo />
-          <Time />
+    <div className="div">
+      <div className="container mx-auto shadow border border-2 rounded-2 p-5">
+        <h3 className="text-center">Hi I'm</h3>
+        <div className="d-flex justify-content-center">
+          <h1 className="name">Joshua Zafe</h1>
         </div>
-        {/* RIGHT PANEL - NEWS FEED COMPONENT  ****************************************/}
-        <Newsfeed />
+        <h2 className="text-center">Web Developer</h2>
+      </div>
+
+      <div className="d-flex justify-content-center">
+        <NavLink to="/about" className={({ isActive }) => (isActive ? "link-active" : "link")}>
+          <h4 className="getstarted" style={{ textDecoration: 'none' }}>Get Started</h4>
+        </NavLink>
       </div>
     </div>
+
   );
 }
 

@@ -4,22 +4,19 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Cascadia Code', sans-serif;
-  background-color:black;
+  font-family: 'Comic-sans';
   color:white;
 }
 
-
-.text-smaller {
-  font-size: 0.9rem;
+body {
+  background-image: url('./dark-bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  widht: 200px;
+  height: 100vh;
 }
 
-.feeds-panel {
-  height: 500px;
-  overflow: scroll;
-}
-
-
+/* NAVIGATION BAR  */
 
 /* Basic styles for nav links */
 nav a {
@@ -45,5 +42,56 @@ a:hover {
   background: gray;
   border-radius: 5px;
 }
+
+/* END OF NAVIGATION BAR */
+
+
+.text-smaller {
+  font-size: 0.9rem;
+}
+
+.feeds-panel {
+  height: 500px;
+  overflow: scroll;
+}
+
+/* HOME.JSX */
+
+.container {
+  margin-top: 100px;
+}
+
+@media (max-height: 480px) {
+  .container {
+    margin-top: 1px;
+  }
+}
+
+
+.name {
+  border: 2px solid orange;
+  letter-spacing: 10px;
+  padding: 25px 35px;
+  margin: 30px auto;
+}
+
+
+.getstarted {
+  letter-spacing: 6px;
+  padding: 25px 35px;
+  margin: 30px auto;
+  text-decoration: none;
+}
+
+.getstarted:hover{
+  color:orange;
+}
+
+
+
+
+/* HOME.JSX */
+
+
 
 
