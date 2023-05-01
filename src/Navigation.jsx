@@ -2,23 +2,29 @@ import { NavLink, Link } from "react-router-dom";
 
 function Navigation() {
   return (
-    <nav className="navbar navbar-expand-lg shadow py-4 sticky-top bg-light page-padding">
-      <div className="container-fluid">
-        <Link to="/" className="navbar-brand"><i class="fa-regular fa-file-code"></i><i class="fa-solid fa-g"></i>roup 3
-        </Link>
-        <div className="d-flex flex-space-between">
-          <NavLink to="/" className={({ isActive }) => (isActive ? "link-active" : "link")}>
-            Home
-          </NavLink>
-          <NavLink to="/about" className={({ isActive }) => (isActive ? "link-active" : "link")}>
-            About
-          </NavLink>
-          <NavLink to="/contact" className={({ isActive }) => (isActive ? "link-active" : "link")}>
-            Contact
-          </NavLink>
-          <NavLink to="/testing" className={({ isActive }) => (isActive ? "link-active" : "link")}>
-            Testing
-          </NavLink>
+    <nav class="navbar navbar-expand-lg sticky-top">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mx-auto mt-2">
+            <NavLink to="/" className={({ isActive }) => (isActive ? "link-active" : "link")}>
+              Home
+            </NavLink>
+            <NavLink to="/about" className={({ isActive }) => (isActive ? "link-active" : "link")}>
+              About
+            </NavLink>
+            <NavLink to="/skills" className={({ isActive }) => (isActive ? "link-active" : "link")}>
+              Skills
+            </NavLink>
+            <NavLink to="/projects" className={({ isActive }) => (isActive ? "link-active" : "link")}>
+              Projects
+            </NavLink>
+            <NavLink to="/contact" className={({ isActive }) => (isActive ? "link-active" : "link")}>
+              Contact
+            </NavLink>
+          </ul>
         </div>
       </div>
     </nav>

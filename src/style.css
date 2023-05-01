@@ -5,19 +5,10 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Cascadia Code', sans-serif;
+  background-color:black;
+  color:white;
 }
 
-.page-padding {
-  padding-left: 6.25em;
-  padding-right: 6.25em;
-}
-
-@media screen and (max-width: 576px) {
-  .page-padding {
-    padding-left: 2em;
-    padding-right: 2em;
-  }
-}
 
 .text-smaller {
   font-size: 0.9rem;
@@ -28,34 +19,25 @@
   overflow: scroll;
 }
 
-nav {
-  height: 56px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: #3f51b5;
-  box-shadow: 0 5px 10px #ccc;
-}
+
 
 /* Basic styles for nav links */
 nav a {
-  display: flex;
-  align-items: center;
-  /* align-items: stretch; */
-  padding-left: 30px;
-  padding-right: 30px;
+  padding-left: 15px;
+  padding-right: 15px;
   height: 100%;
   text-decoration: none;
+  color:white;
 }
 
 /* Specific styles for non-active links */
 .link {
-  color: black;
+  color: white;
 }
 
 /* Specific styles for active links */
 .link-active {
-  color: black;
+  color: white;
   background: orange;
   border-radius: 5px;
 }
@@ -63,4 +45,7 @@ nav a {
 .content {
   margin-top: 50px;
   text-align: center;
+
+
 }
+
