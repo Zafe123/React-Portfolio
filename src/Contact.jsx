@@ -7,7 +7,7 @@ function Contact() {
       {/* CONTACTINFO COMPONENT ******************************************/}
       <ContactInfo />
       {/* CONTACTINFO COMPONENT ******************************************/}
-      <GoogleMap />     
+      <GoogleMap />
 
     </div>
   );

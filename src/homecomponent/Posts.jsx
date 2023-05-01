@@ -4,7 +4,7 @@ function Posts() {
 
   const [posts, setPosts] = useState([]);
 
-    // TODO: set first render to 10 posts, then additional 10 posts......
+  // TODO: set first render to 10 posts, then additional 10 posts......
 
 
 
@@ -13,17 +13,17 @@ function Posts() {
       .then(response => response.json())
       .then(data => {
         // setPosts(data);
-        setPosts(data.slice(0,20));
+        setPosts(data.slice(0, 5));
       });
   }, []);
 
   return (
-      posts.map(post => (
-        <div className="m-3 p-2 border border-1 rounded-2">
-          <h5>{post.title}</h5>
-          <p className="text-smaller">{post.body}</p>
-        </div>
-      ))
+    posts.map(post => (
+      <div className="m-3 p-2 border border-1 rounded-2">
+        <h5>{post.title}</h5>
+        <p className="text-smaller">{post.body}</p>
+      </div>
+    ))
   );
 }
 
