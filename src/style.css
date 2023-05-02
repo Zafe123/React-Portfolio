@@ -12,8 +12,7 @@ body {
   background-image: url('./dark-bg.jpg');
   background-repeat: no-repeat;
   background-size: cover;
-  widht: 200px;
-  height: 100vh;
+  background-position: center;
 }
 
 /* NAVIGATION BAR  */
@@ -87,10 +86,21 @@ a:hover {
   color:orange;
 }
 
-
-
-
 /* HOME.JSX */
+
+
+/* ABOUT.JSX */
+
+.profile {
+  width: 500px;
+  height: 497px;
+  object-fit: contain;
+  margin-left: 150px;
+}
+
+
+
+/* ABOUT.JSX */
 
 
 
