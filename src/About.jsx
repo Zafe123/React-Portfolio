@@ -1,11 +1,12 @@
 import profile from './images/profile.webp';
-
+import resume from './resume/resume.pdf';
 
 function About() {
   return (
 
     <center>
       <div className="container p-3 border border-1 rounded-3 shadow">
+        <h1 className="mb-4">ABOUT ME</h1>
         <div className="row">
           <div className="col-md-6 about">
             <p>My name is Joshua Zafe, and I'm a graduate of Bachelor of Science in Information Technology.
@@ -24,10 +25,20 @@ function About() {
             <p> Thank you for taking the time to get to know me, and I look forward to the opportunity to
               work with you.</p>
 
-            <a href="resume/resume.pdf" class="btn btn-danger" target="_blank">VIEW CV</a>
           </div>
+          <div className="col-md-6 ">
+            <img src={profile} className="profile rounded-4" />
+          </div>
+        </div>
+      </div>
+      <div className="container p-3 border border-1 rounded-3 shadow">
+        <h1>Working Experience</h1>
+        <div className="row">
           <div className="col-md-6">
-            <img src={profile} className="profile" />
+
+
+
+            <a href={resume} class="text-white" target="_blank">VIEW CV</a>
           </div>
         </div>
       </div>
